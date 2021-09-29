@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    padding: 10px 0;
+    text-align: center;
+	background: #c9dbe9;
+	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  }
+
+  .head1 {
+    display: flex;
+    align-items: center;
+    width: auto;
+    margin-left: 29%;
+  }
+
+  .head1 img{
+      float: left;
+    padding-right: 7px;
+  }
+
+  .head1 h1{
+      position: relative;
+      padding-left: 10px;
+    font-size: 65px;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 0.6;
+    -ms-flex: 0.6;
+    flex: 0.6;
+    background: rgb(177, 175, 175);
+    padding: 20px;
+    width: 20%;
+    position: absolute;
+    height: 200%;
+    overflow: auto;
+  }
+  
+  /* Style the list inside the menu */
+  nav span {
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 20px;
+  }
+
+  nav p {
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 5px;
+  }
+
+  nav li {
+    padding-bottom: 8px;
+  }
+  
+  /* Style the content */
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    display: block;
+    background-color: rgb(145, 142, 142);
+    padding: 10px;
+    margin-left: 20%;
+    padding-right: 65%;
+    position: absolute;
+    height: 200%;
+    width: 79%;
+    overflow: auto;
+  }
+  
+  /* Style the footer */
+ 
+  /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+
+  #login{
+      width: 100%;
+  }
+ #login form{
+     padding-left: 140%;
+ }
+
+ #login p{
+     width: 600px;
+     font-size: 50px;
+     margin-left: 190%;
+     font-weight: bold;
+ }
+
+ #login td{
+      font-size: 20px;
+      padding-right: 80px;
+      padding-bottom: 10px;
+  }
+
+  #login button{
+    padding-right: 10px;
+  }
+  
+  #login form input[type="text"], input[type="password"] {
+    background-color: #3b4148;
+    border-radius: 5px 5px 5px 5px;
+    color: #fbffff;
+    font-size: 16px;
+    margin-bottom: 0.6em;
+    padding: 0 16px;
+    height: 45px;
+    width: 250px;
+  }
+
+  #login form select {
+    background-color: #3b4148;
+    border-radius: 5px 5px 5px 5px;
+    color: #fbffff;
+    font-size: 16px;
+    margin-bottom: 0.6em;
+    padding: 0 16px;
+    height: 45px;
+    width: 250px;
+  }
+  
+  #login form input[type="submit"] {
+    background-color: #ea4c88;
+    color: #eee;
+    font-weight: bold;
+    margin-left: 25%;
+    margin-top: 0px;
+    text-transform: uppercase;
+    width: 130px;
+    height: 40px;
+  }
+
+  #login form input[type="button"] {
+    background-color: #5418e0;
+    color: #eee;
+    font-weight: bold;
+    margin-top: 0px;
+    padding-left: 5px;
+    text-transform: uppercase;
+    width: 130px;
+    height: 40px;
+  }
+  
+  #login form input[type="submit"]:hover {
+    background-color: #d44179;
+  }
+  
+
+  
