@@ -1,2 +1,0 @@
-# storeyourresults.github.io
- TIE
