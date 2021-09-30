@@ -3,6 +3,9 @@
         if(isset($_GET['user'])){
           $username = $_GET['user'];
         }
+	 else{
+          header('location: login.php');
+        }
 				if(isset($_POST['usn']))
 				{
 					$name =$_POST['name'];
